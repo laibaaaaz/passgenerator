@@ -41,7 +41,9 @@ lower = input("Do you want to include lower case characters, type y for yes and 
 number = input("Do you want to include numbers, type y for yes and n for no: ")
 special = input("Do you want to include special characters, type y for yes and n for no: ")
 
-
+if upper=="n" and lower=="n" and number=="n" and special=="n":
+    print("Select at least one option")
+    quit()
 
 print("Your Password is: ")
 print(password_generator(numofchar, upper, lower, number, special))
